@@ -1,0 +1,28 @@
+myapp.controller("homeappCtrl",function($scope){
+    //数据1
+    $scope.row1=[
+        {uiSref:"tabs.home",imgSrc:"images/i_home.png",title:"朗观首页"},
+        {uiSref:"tabs.advantage",imgSrc:"images/i_adv.png",title:"我们优势"},
+        {uiSref:"tabs.flow",imgSrc:"images/i_team.png",title:"核心团队"}
+    ];
+    $scope.row2=[
+        {uiSref:"tabs.case",imgSrc:"images/i_case.jpg",title:"设计案例"},
+        {uiSref:"tabs.flow",imgSrc:"images/flow12.jpg",title:"服务流程"},
+        {uiSref:"tabs.advantage",imgSrc:"images/i_gongdi.jpg",title:"高质施工"}
+    ];
+    $scope.row3=[
+        {uiSref:"tabs.flow",imgSrc:"images/i_loupan.jpg",title:"热装楼盘"},
+        {uiSref:"tabs.about",imgSrc:"images/logo.jpg",title:"关于我们"},
+        {uiSref:"tabs.order",imgSrc:"images/i_order.png",title:"在线预约"}
+    ];
+    $scope.picItem1=[
+        {imgsrc:"images/case02.jpg",txt:"新作《安妮的午后》"},
+        {imgsrc:"images/case03.jpg",txt:"新作《冬季恋歌》"},
+        {imgsrc:"images/case04.jpg",txt:"都市生活"}
+    ];
+    $scope.picItem2=[
+        {imgsrc:"images/case05.jpg",txt:"新作《秋日物语》"},
+        {imgsrc:"images/case06.jpg",txt:"闲暇时光"},
+        {imgsrc:"images/case07.jpg",txt:"风的足迹"}
+    ]
+});

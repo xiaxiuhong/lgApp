@@ -1,0 +1,28 @@
+<ion-view view-title="设计案例">
+    <ion-content class="casePage">
+        <!--下拉刷新-->
+        <ion-refresher pulling-text="下拉刷新"
+                       pulling-icon="icon ion-refresh"
+                       on-pulling="onRefresher()"></ion-refresher>
+
+        <ion-list class="card" ng-repeat="ca in cases" >
+            <ion-item class="item-avatar item-button-right listItem" ng-click="displayImg()">
+                <img src="{{ca.imgSrc}}">
+                <h2 style="color:#f67c6f;font-weight: bold"> {{ca.name}}</h2>
+                <p>{{ca.desc}}</p>
+                <button class="button caseDeBtn">查看详情</button>
+            </ion-item>
+            <div class="caseInfo" style="margin-top: 10px;" ng-show="displayBox">
+                <div class="item item-image">
+                    <img src="{{ca.imgSrc}}">
+                </div>
+                <div class="item row">
+                    <a href="javascript:;" class="icon col ion-thumbsup"> 赞</a>
+                    <a href="javascript:;" class="icon col ion-thumbsdown"> 踩</a>
+                    <a href="javascript:;" class="icon col ion-chatbox"> 评论</a>
+                    <a href="javascript:;" class="icon col ion-share"> 分享</a>
+                </div>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

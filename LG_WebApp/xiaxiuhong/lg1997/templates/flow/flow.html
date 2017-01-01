@@ -1,0 +1,35 @@
+<ion-view view-title="服务流程">
+    <ion-content class="flowPage">
+        <div class="row topRow"></div>
+        <div class="row midRow">
+            <div class="col col-10" style="background:#93c049"></div>
+            <div class="col" style="background: #33541b"></div>
+            <div class="yuanImg">
+                <img src="images/i_home.png">
+                <div class="flowArrow"><i class="icon ion-arrow-down-c"></i></div>
+            </div>
+        </div>
+
+        <div class="row seaRow">
+            <div class="col col-offset-10 seaLeCol">All Flow</div>
+            <div class="col col-offset-10 seaReCol">
+                <label class="item-input-wrapper">
+                    <input type="search" placeholder="Search...">
+                    <i class="icon ion-ios-search placeholder-icon"></i>
+                </label>
+            </div>
+        </div>
+
+        <div class="titleFlow">设计服务流程</div>
+        <div class="row" ng-repeat="flow in flows">
+            <div class="col {{flow.className}} flowRow">
+                <dl>
+                    <dt><img ng-src="{{flow.imgSrc}}"></dt>
+                    <dd><span>{{flow.step}}</span><br>
+                        <p>{{flow.contTxt}}</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

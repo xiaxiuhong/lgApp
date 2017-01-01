@@ -1,0 +1,22 @@
+<ion-view view-title="朗观优势">
+    <ion-content>
+        <div class="advPic">
+            <img src="images/brobg7.jpg">
+            <i class="advInfo"><span>朗观设计机构<br>Design Your Future</span></i>
+        </div>
+
+        <ion-list>
+            <ion-item ng-repeat="adv in advs" class="advItem" style="background-color:{{adv.bg}}">
+                <i><img ng-src="{{adv.imgSrc}}"></i>
+                <a class="advDesc">{{adv.desc}}</a>
+            </ion-item>
+        </ion-list>
+
+        <div class="advInput">
+            <label class="item-input-wrapper">
+                <input type="search">
+                <i class="icon ion-ios-search placeholder-icon"></i>
+            </label>
+        </div>
+    </ion-content>
+</ion-view>

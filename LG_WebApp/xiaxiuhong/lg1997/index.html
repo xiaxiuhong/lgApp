@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>朗观设计</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../lib/ionic/css/ionic.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../../lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/app.js"></script>
+    <script src="templates/advantage/advantageCtrl.js"></script>
+    <script src="templates/case/caseCtrl.js"></script>
+    <script src="templates/flow/flowCtrl.js"></script>
+    <script src="templates/order/orderCtrl.js"></script>
+    <script src="templates/about/aboutCtrl.js"></script>
+    <script>
+        myapp.controller('modalCtrl', function($scope, $ionicModal) {
+                    // 构造模式对话框 - 创建仅服务于当前页面的子页面
+                    $ionicModal.fromTemplateUrl('views/modal.html', {
+                        scope: $scope,       // 作用域使用父作用域
+//                        animation: 'slide-in-up'  // 内置了一种动画，其余是自己写的
+//                        animation: 'slide-in-left'
+//                        animation: 'slide-in-right'
+                        animation: 'scale-in'
+                    }).then(function(modal) {
+                        // 将这个模态对话框保存到一个变量中，方便以后再使用
+                        $scope.modal = modal;   // 传入的参数model就是构造好的对话框
+                    });
+
+                    $scope.openModal = function() {
+                        $scope.modal.show();        // 打开对话框
+                    };
+
+                    $scope.closeModal = function() {
+                        $scope.modal.hide();        // 隐藏对话框(隐藏不是销毁)
+                    };
+
+                    // 创建新联系人
+                    $scope.createContact = function(u) {
+                        $scope.contacts.push({ name: u.username,email: u.email});
+                        $scope.modal.hide();    // 隐藏
+                    };
+
+                    // 离开时清除model
+                    $scope.$on('$destroy', function() {
+                        $scope.modal.remove();
+                    });
+
+                    // 在隐藏modal时执行一些动作
+                    $scope.$on('modal.hidden', function() {
+                        // 在这里执行一些操作
+                    });
+
+                    // 在移除modal时执行一些动作
+                    $scope.$on('modal.removed', function() {
+                        // 在这里执行一些操作
+                    });
+                });
+    </script>
+</head>
+<body ng-app="myapp" ng-controller="modalCtrl">
+<!--导航栏-->
+<ion-nav-bar class="navBar has-tabs-top">
+    <ion-nav-back-button style="color:#fff">Back</ion-nav-back-button>
+
+    <ion-nav-buttons side="right">
+        <button class="button button-icon ion-navicon-round " style="color:#EAFFE5"  ng-click="openModal()"></button>
+    </ion-nav-buttons>
+</ion-nav-bar>
+
+<!--导航视图-->
+<ion-nav-view></ion-nav-view>
+
+<!--内联模板-->
+<script id="views/modal.html" type="text/ng-template">
+    <ion-modal-view style="height:30%">
+        <ion-header-bar class="bar bar-header bar-positive">
+            <h1 class="title">完善您的装修需求</h1>
+            <button class="button button-clear button-primary" ng-click="closeModal()">取消</button>
+        </ion-header-bar>
+
+        <ion-content class="padding">
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">城市</span>
+                    <input type="text" ng-model="newUser.username">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">房屋类型</span>
+                    <input type="text" ng-model="newUser.email">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">使用面积</span>
+                    <input type="text" ng-model="newUser.email">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">风格偏好</span>
+                    <input type="text" ng-model="newUser.email">
+                </label>
+
+                <button class="button button-full button-positive" ng-click="createContact(newUser)">确定</button>
+            </div>
+        </ion-content>
+    </ion-modal-view>
+</script>
+
+</body>
+</html>

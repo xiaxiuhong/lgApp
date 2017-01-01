@@ -1,0 +1,9 @@
+myapp.controller("advantageCtrl",function($scope){
+    //数据
+    $scope.advs=[
+        {desc:"文明施工，电线",imgSrc:"images/advicon_01.jpg",bg:"#5EDFA7"},
+        {desc:"设计师经验丰富，能准确捕捉您的设计需求",imgSrc:"images/advicon_02.jpg",bg:"#FFA357"},
+        {desc:"施工可靠，队伍稳定，报价透明",imgSrc:"images/advicon_03.jpg",bg:"#FF5EB2"},
+        {desc:"保障到位：服务，材料，技术，售后",imgSrc:"images/advicon_04.jpg",bg:"#5EACFF"}
+    ]
+});

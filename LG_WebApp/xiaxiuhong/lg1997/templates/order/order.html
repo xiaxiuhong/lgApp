@@ -1,0 +1,84 @@
+<ion-view view-title="在线预约">
+    <ion-content class="orderPage">
+        <h3>完善您的装修需求</h3>
+        <h3>以便于设计师更好的为您服务</h2>
+        <!--下拉列表-->
+        <label class="item item-input item-select">
+            <span class="input-label">所在城市：</span>
+            <select>
+                <option value="北京">北京</option>
+                <option value="上海">上海</option>
+                <option value="杭州">杭州</option>
+                <option value="哈尔滨">哈尔滨</option>
+                <option value="哈尔滨">南京</option>
+                <option value="哈尔滨">广州</option>
+                <option value="哈尔滨">昆明</option>
+            </select>
+        </label>
+
+        <label class="item item-input item-select">
+            <span class="input-label">房屋类型：</span>
+            <select>
+                <option value="公寓">公寓</option>
+                <option value="别墅">别墅</option>
+                <option value="复式">复式</option>
+            </select>
+        </label>
+
+        <!--<div class="item item-input">-->
+            <!--<span class="input-label">套内面积：</span>-->
+            <!--<input type="text">m²-->
+        <!--</div>-->
+
+        <label class="item item-input item-select">
+            <span class="input-label">风格偏好：</span>
+            <select>
+                <option value="北欧">北欧</option>
+                <option value="美式">美式</option>
+                <option value="中式">中式</option>
+                <option value="地中海">地中海</option>
+                <option value="混搭">混搭</option>
+                <option value="欧式">欧式</option>
+                <option value="简约">简约</option>
+                <option value="日式">日式</option>
+            </select>
+        </label>
+
+        <!--在线预约-->
+        <h2 style="font:600 20px/30px 'microsoft yahei'; color: rebeccapurple">在线预约</h2>
+        <hr>
+        <form class="list list-inset">
+            <div class="item item-input">
+                <input type="text" placeholder="联系方式">
+            </div>
+            <br>
+            <div class="item item-input">
+                <input type="text" placeholder="楼盘名称">
+            </div>
+            <br>
+            <div class="item item-input">
+                <input type="text" placeholder="套内面积">
+            </div>
+            <br>
+            <div class="item item-input">
+                <input type="text" placeholder="2016/12/22">
+            </div>
+            <br>
+            <button class="button button-positive button-block ">
+                    <!--ng-disabled="!data.tel || !data.house ||!data.area"-->
+                提交</button>
+        </form>
+
+        <!--微信互动-->
+        <h2 style="font:600 20px/30px 'microsoft yahei'; color: rebeccapurple">微信互动</h2>
+        <hr>
+        <div class="hudong">
+            <p>上海朗观设计官方微信二维码</p>
+            <p>网络预约前20名可凭微信及户型图</p>
+            <p>现场领取精美礼品一份</p>
+            <img src="images/erweima.jpg">
+            <p class="tip">扫码关注有惊喜！</p>
+            <div class="topArr"><i class="icon ion-android-arrow-up"></i></div>
+        </div>
+    </ion-content>
+</ion-view>

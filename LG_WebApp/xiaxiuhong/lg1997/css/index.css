@@ -1,0 +1,277 @@
+/*tour引导页*/
+#tourView .slider{ height: 100%;}
+#tourView .slider img{ height: 100%;width: 100% }
+#tourView .slider-slide{ text-align: center;}
+.enterBtn{ position: relative; top: -20%; left:30%; height: 120px; width:300px; border-radius:10px;
+    font:800 50px/100px "microsoft yahei"; color:#fff; }
+
+/*index主页*/
+.navBar{ background-color:#46B0A0 ; color: #fff;}
+.tabs{ background-color:#46B0A0  ;color:#fff;}
+.box{ height:400px; width:100%; }
+.box > img{ width: 100%; height: 100%; display: block}
+
+/*home首页*/
+.listItem{ background-color:#fff0e1;}
+.someUser{ position: relative; background-color: #efefef;}
+.iconImg{ height: 100px; width: 100px;border-radius: 50%; position:absolute;
+    top: -120px;left:50%; margin-left: -50px; box-shadow: 0 0 10px 0 #fff}
+.iconImg>img{ height: 100%; width: 100%;border-radius: 50%;}
+.iconImg .runIcon{ position: absolute; top: 30px;font:800 40px/50px "microsoft yahei"; color:deeppink;
+    animation: topArrRun 3s infinite;}
+.iconImg .runIcon:first-child{ left: -60px;}
+.iconImg .runIcon:last-child{ right: -60px;}
+.someInfo{ margin-top:90px; text-align: center;padding: 10px 0;}
+.someInfo p{ font:600 20px/30px "microsoft yahei"; margin:20px;}
+.someInfo p:nth-child(2n){ color:teal;font:600 30px/50px "microsoft yahei"; }
+.listNav { text-align: center}
+.listNav a{ text-decoration: none; font-weight: bold; }
+.listNav dt a{ display:inline-block; height: 80px; width: 80px; border-radius: 50%; text-align: center;
+    transition: all 0.6s}
+/*.listNav dt a:hover{ transform: scale(1.2)}*/
+.listNav dt a>img{ width: 100%; height: 100%; border-radius: 50%;}
+.listNav dd a{ color: teal;}
+.homePic .item{ padding: 0;}
+.picItem{ position: relative;}
+.picInfo{ position: absolute; left:10% ;bottom:40px; padding:20px 30px;background-color:#ccc;
+    border-radius: 5px;opacity: 0.8; color: deeppink}
+/*.picInfo:hover{ background-color:teal; color: #fff; opacity: 0.8}*/
+
+/*case案例*/
+.casePage{ background: url("../images/tour03.jpg") no-repeat; background-size: cover;}
+.caseDeBtn{ background:teal; color: #fff; }
+.caseInfo a{ color: teal; text-decoration: none; }
+
+/*flow流程*/
+.flowPage{ background-color: #efefef;}
+/*.flowPage{ background: url("../images/bg03.jpg") no-repeat; background-size: cover; }*/
+.row{ padding: 0; margin-bottom: 10px;}
+.topRow,.midRow{ height:30px; width: 100%; background-color:#5b8b27; padding: 0;position: relative;
+    margin-bottom:0;}
+.yuanImg{height:150px; width:150px; border:5px solid #65a197;border-radius: 50%; position: absolute;
+left:50%; top: -105px;margin-left: -75px;}
+.yuanImg img{ height: 100%; width: 100%; border-radius: 50%;}
+.flowArrow{ height:44px; width:44px; border:5px solid #ebebeb;text-align: center;border-radius: 50%;
+    background: #6f6a55;position: absolute;left: 50%; bottom:-5px;margin-left: -22px; transition: all 0.5s}
+.flowArrow:hover{ transform: scale(1.5)}
+.flowArrow i{ font:600 18px/40px "simsun";color: #fff; cursor: pointer}
+.seaRow{ height: 80px; }
+.seaLeCol{ border-right:4px solid #5b8b27;text-align: center;line-height: 80px;font:600 24px/80px "microsoft yahei" }
+.seaReCol label{ height: 40px; margin:20px auto;}
+.seaReCol input{ height:100%;width:100%;background: #ebebeb;border-radius: 5px; padding: 0 5px;}
+input::-webkit-input-placeholder{color: teal}
+:-moz-placeholder{color: teal}
+::-moz-placeholder{color: teal}
+:-ms-input-placeholder{color: teal}
+.seaReCol i{color:teal;font:800 24px/40px "microsoft yahei";cursor: pointer;}
+.titleFlow{ height:40px; width:150px; background: deeppink; color: #fff; border-radius:5px;
+    margin:5px auto; text-align: center; font:18px/40px "microsoft yahei"}
+
+.flowRow{ position: relative; text-align: center}
+.flowRow:before{ content: ""; height:16px; width:16px;background:#5b8b27;position: absolute;
+    top:30%; border-radius: 50%;box-shadow: 0 0 0 3px #fff;}
+.flowRow:after{ content:""; height: 2px; width:35%; background:#5b8b27;position: absolute;top:33%}
+.flowRow dl{ margin-bottom:0;}
+.flowRow dt{ height:120px; width:120px; margin: 0 auto}
+.flowRow dt img{ height: 100%; width: 100%; }
+.flowRow dd p{font: 14px/20px "microsoft yahei";margin-bottom: 0; padding: 0 40px;}
+.flowRow dd span{ font:600 20px/40px "microsoft yahei";color: teal;}
+
+.flowOne{ border-left:4px solid #5b8b27; }
+.flowOne:before{ left:-10px; }
+.flowOne:after{left:15px;  }
+
+.flowTwo{border-right:4px solid #5b8b27;}
+.flowTwo:before{ right:-10px; }
+.flowTwo:after{ right:15px;  }
+
+.flowThree{ background:#019b79; border-left:4px solid #5b8b27;height:160px; }
+.flowThree dl{position: relative; top: -60px; }
+.flowThree dt{height:120px; width:120px;border: 10px solid #f0e68c;border-radius: 50%;
+    margin: 0 auto ;}
+.flowThree dt img{  height: 100%; width: 100%;border-radius: 50%; }
+.flowThree:after{height: 0; width: 0;}
+.flowThree:before{ left:-10px;}
+.flowThree dd span{ color: #fff}
+
+.flowSev{ background:greenyellow; }
+.flowTen{ background:palevioletred;}
+
+/*order预约页*/
+.orderPage{background: url("../images/bg13.jpg") no-repeat;background-size: cover }
+.orderPage h3{ font: 800 30px/50px "microsoft yahei"; color: deeppink; margin:10px;text-align: center;}
+.orderPage label{ margin-bottom: 10px; border-radius: 5px;height:60px;}
+.hudong{ text-align: center}
+.hudong p{ font:600 20px/30px "microsoft yahei"; margin:20px;}
+.hudong .tip{ font:600 50px/100px "microsoft yahei";color:teal; }
+.topArr{ height:100px; width: 100px; border: 10px solid #fff;cursor: pointer;
+    border-radius: 50%; text-align: center; margin: 0 auto; line-height:80px;}
+.topArr i{ font:800 50px/80px "microsoft yahei"; color:#fff}
+
+/*advantage 优势*/
+.advPic{ height:600px;position: relative;}
+.advPic>img{ height: 100%}
+.advInfo{ width:40%; height:20%; border:5px solid deeppink; position: absolute; left:30%;
+    bottom:10%; animation: topArrRun 2s infinite;}
+.advInfo span{ height:60%; width:60%; background-color:deeppink; position: absolute;
+    left:20%; top: -20%;text-align: center;font:600 20px/30px "microsoft yahei";}
+.advItem{ height:180px; width:80%; margin:50px auto;
+    border-radius:10px;}
+.advItem i{ display: inline-block; height:60px; width:60px;border-radius: 50%;
+    margin:45px 80px 0 50px;}
+.advItem i>img{ height: 100%; border-radius: 50%;}
+.advDesc{ text-align: right; font:800 24px/60px "microsoft yahei"; color: #fff;}
+.advInput label{ background-color: #fff;}
+.advInput label input{ width: 60%; height:80px; margin: 0 auto; background-color: #ccc;
+    border-radius:40px;}
+.advInput label i{font:600 60px/80px "microsoft yahei"; color: #000;position: relative;
+    left:-50%}
+/*about 关于*/
+.aboutTop{ position: relative;}
+.aboutPic{ height:360px; width:360px; border:10px solid #ccc;border-radius: 50%;
+    position: absolute; top:120px; left: 50%; margin-left: -180px;}
+.aboutPic>img{ height: 100%; width: 100%; border-radius: 50%;}
+.lgTxt p{ font:40px/60px "microsoft yahei"; color: #fff;text-align:left;padding:10px 30px; }
+.lgTxt p span{ font-size: 80px;}
+.abTabBtn li{ text-align: center; font:45px "microsoft yahei";}
+.abTabBtn a{ display: inline-block; height:140px; width:140px; border:10px solid #f5e79e;
+    border-radius: 50%; text-align: center; font: 100px/110px "microsoft yahei";color:#fff;
+    background-color: #5b8b27;margin:50px 30px;box-shadow: 0 0 10px 0 #f5e79e;}
+.abTabBtn li:nth-child(2) a{ margin-top:200px;}
+.abTabBtn li:nth-child(3) a{ margin-top:200px;}
+.abTabBtn .current{ background-color:deeppink; border-color:peachpuff;}
+#abContent { height:650px; padding:10px ;border-bottom: 5px dotted deeppink;
+    border-top: 5px dotted deeppink; background-color: #efefef}
+#abContent h3 {
+    font:600 50px/100px "microsoft yahei";color: teal;margin-bottom:30px;}
+/*让一开始，所有的内容面板隐藏*/
+#abContent > div { padding: 20px;display: none;}
+#abContent > div > div {  height: 300px;width: 300px;border-radius: 50%;border: #dddddd solid 10px;
+    margin-right: 100px;float: left; }
+#abContent > div > div>img{ height: 100%; border-radius: 50%; width: 100%;}
+#abContent p { font:30px/50px "simsun"; }
+
+/*弹框*/
+.slide-in-right {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.slide-in-right.ng-enter, .slide-in-right > .ng-enter {
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+    transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+}
+
+.slide-in-right.ng-enter-active, .slide-in-right > .ng-enter-active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.slide-in-right.ng-leave, .slide-in-right > .ng-leave {
+    -webkit-transition: all ease-in-out 250ms;
+    transition: all ease-in-out 250ms;
+}
+
+.slide-in-left {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.slide-in-left.ng-enter, .slide-in-left > .ng-enter {
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+    transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+}
+
+.slide-in-left.ng-enter-active, .slide-in-left > .ng-enter-active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.slide-in-left.ng-leave, .slide-in-left > .ng-leave {
+    -webkit-transition: all ease-in-out 250ms;
+    transition: all ease-in-out 250ms;
+}
+
+/*Scale-In Animation*/
+.scale-in {
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.scale-in.ng-enter,
+.scale-in > .ng-enter {
+    transition: all cubic-bezier(.1, .7, .1, 1) 600ms;
+}
+
+.scale-in.ng-enter-active,
+.scale-in > .ng-enter-active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.scale-in.ng-leave,
+.scale-in > .ng-leave {
+    transition: all ease-in-out 250ms;
+}
+
+.topArr{ animation: topArrRun 2s infinite; }
+@keyframes  topArrRun{
+    0%{
+        transform:translateY(0);
+    }
+    /*33%{
+        transform:translateY(20px);
+    }*/
+    50%{
+        transform:translateY(50px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

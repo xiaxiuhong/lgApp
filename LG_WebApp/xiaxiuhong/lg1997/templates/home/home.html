@@ -1,0 +1,143 @@
+<ion-view view-title="朗观设计">
+    <!--导航栏按钮组-->
+    <ion-nav-buttons side="left">
+        <button class="button button-icon ion-camera" style="color:#EAFFE5"></button>
+    </ion-nav-buttons>
+
+    <!--<ion-nav-buttons side="right">-->
+        <!--<button class="button button-icon ion-navicon-round " style="color:#EAFFE5"></button>-->
+    <!--</ion-nav-buttons>-->
+
+    <ion-content>
+        <!--轮播图-->
+        <ion-slide-box auto-play="true" does-continue="true" show-pager="false" slide-interval="2000">
+            <ion-slide>
+                <div class="box"><img src="images/tab01.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/tab02.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/tab03.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/tab03.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/tab05.jpg"></div>
+            </ion-slide>
+        </ion-slide-box>
+
+        <!--介绍-->
+        <div class="someUser">
+            <div class="iconImg">
+                <i class="icon ion-image runIcon"></i>
+                <img src="images/icon01.jpg">
+                <i class="icon ion-ios-heart-outline runIcon"></i>
+            </div>
+            <div class="someInfo has-tabs">
+                <p>朗观设计机构</p>
+                <p>Design Your Future</p>
+                <p>香港L&G设计事务所&&上海装饰设计界资深人士协作</p>
+                <p>Total Solution</p>
+            </div>
+        </div>
+
+        <!--列表项-->
+        <div class="list">
+            <div class="item row listNav">
+                <div class="col">
+                    <dl>
+                        <dt><a ui-sref="tabs.home" ><img src="images/i_home.png"></a></dt>
+                        <dd><a ui-sref="tabs.home">朗观首页</a></dd>
+                    </dl>
+                </div>
+                <div class="col">
+                    <dl>
+                        <dt><a ui-sref="tabs.advantage"><img src="images/i_adv.png"></a></dt>
+                        <dd><a ui-sref="tabs.advantage">我们优势</a></dd>
+                    </dl>
+                </div>
+                <div class="col">
+                    <dl>
+                        <dt><a ui-sref="tabs.flow"><img src="images/i_team.png"></a></dt>
+                        <dd><a ui-sref="tabs.flow">核心团队</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="item row listNav">
+                <div class="col">
+                    <dl>
+                        <dt><a ui-sref="tabs.case" ><img src="images/i_case.jpg"></a></dt>
+                        <dd><a ui-sref="tabs.case" >设计案例</a></dd>
+                    </dl>
+                </div>
+                <div class="col">
+                    <dl>
+                        <dt><a ui-sref="tabs.flow"><img src="images/flow12.jpg"></a></dt>
+                        <dd><a ui-sref="tabs.flow">服务流程</a></dd>
+                    </dl>
+                </div>
+                <div class="col">
+                    <dl>
+                        <dt><a ui-sref="tabs.advantage"><img src="images/i_gongdi.jpg"></a></dt>
+                        <dd><a ui-sref="tabs.advantage">高质施工</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="item row listNav">
+                <div class="col">
+                    <dl>
+                        <dt><a ui-sref="tabs.case" ><img src="images/i_loupan.jpg"></a></dt>
+                        <dd><a ui-sref="tabs.case">热装楼盘</a></dd>
+                    </dl>
+                </div>
+                <div class="col">
+                    <dl>
+                        <dt><a ui-sref="tabs.about"><img src="images/logo.jpg"></a></dt>
+                        <dd><a ui-sref="tabs.about">关于我们</a></dd>
+                    </dl>
+                </div>
+                <div class="col">
+                    <dl>
+                        <dt><a ui-sref="tabs.order"><img src="images/i_order.png"></a></dt>
+                        <dd><a href="tabs.order">在线预约</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="homePic">
+            <ion-list>
+                <ion-item>
+                    <a class="picItem" href="javascript:;">
+                        <img src="images/case02.jpg">
+                        <i class="picInfo">新作《安妮的午后》</i>
+                    </a>
+                    <a class="picItem" href="javascript:;">
+                        <img src="images/case03.jpg">
+                        <i class="picInfo">新作《冬季恋歌》</i>
+                    </a>
+                    <a class="picItem"  href="javascript:;">
+                        <img src="images/case04.jpg">
+                        <i class="picInfo">都市生活</i>
+                    </a>
+                </ion-item>
+                <ion-item>
+                    <a class="picItem"  href="javascript:;">
+                        <img src="images/case05.jpg">
+                        <i class="picInfo">新作《秋日物语》</i>
+                    </a>
+                    <a class="picItem"  href="javascript:;">
+                        <img src="images/case06.jpg">
+                        <i class="picInfo">闲暇时光</i>
+                    </a>
+                    <a class="picItem"  href="javascript:;">
+                        <img src="images/case07.jpg">
+                        <i class="picInfo">风的足迹</i>
+                    </a>
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>
